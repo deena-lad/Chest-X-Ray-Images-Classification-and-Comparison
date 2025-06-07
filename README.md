@@ -1,38 +1,56 @@
-# Chest X-Ray Image Classification: Comparative Deep Learning Study
+# Chest X-Ray Image Classification 🩻
+## Deep Learning-Based Comparative Analysis of CNN Architectures
 
-This project replicates and compares state-of-the-art deep learning techniques for classifying chest X-ray images into three categories: **COVID-19**, **Pneumonia**, and **Normal**. The study implements models such as **CNN**, **VGG16**, **VGG19**, **ResNet50**, **Xception**, and a **Hybrid VGG19+CNN**.
+This project replicates and compares various deep learning models for classifying chest X-ray images into **COVID-19**, **Pneumonia**, and **Normal** classes. It serves both as an academic study and a practical demonstration of medical imaging analysis using CNN-based architectures.
 
-## 🧠 Techniques Used
-- Convolutional Neural Networks (Custom)
-- Pretrained Architectures: VGG16, VGG19, ResNet50, Xception
-- Transfer Learning
-- Data Augmentation
-- Preprocessing: CLAHE, Normalization, Noise Reduction
+📓 **[Interactive Notebook](./notebook/Chest_XRay_Classification.ipynb)**  
+📦 **[Installation Requirements](./requirements.txt)**
 
-## 🧪 Dataset
-- Source: Mendeley Data
-- Classes: COVID-19, Normal, Pneumonia
-- Total: ~5200 images
-- All resized to 256×256 and split into 80:20 train:test
+---
 
-## 📊 Results
-- Best Models: VGG19, Hybrid VGG19+CNN
-- Metrics: Accuracy, F1-Score, Training/Validation Loss
+## 📊 Project Summary
+
+### ✅ Models Implemented
+- Custom CNNs (2 architectures)
+- VGG16, VGG19 (from scratch and pretrained)
+- Xception (with transfer learning)
+- ResNet50 (ImageNet pretrained)
+- Hybrid VGG19 + CNN model
+
+### 🧠 Techniques Used
+- **Preprocessing**: Normalization, CLAHE, Noise Filtering
+- **Augmentation**: Rotation, Flip, Zoom
+- **Transfer Learning**
+- **Evaluation**: Accuracy, F1-Score, Confusion Matrix
+
+### 📁 Dataset Details
+- Source: [Mendeley Data](https://data.mendeley.com/)
+- Classes: `COVID-19`, `Pneumonia`, `Normal`
+- Total Images: 5,228
+- Image Size: Resized to 256×256
+- Split: 80% Train / 20% Test (+ 20% Validation from Train)
+
+---
+
+## 🧪 Results Snapshot
 
 | Model         | Test Accuracy | F1-Score |
 |---------------|---------------|----------|
 | VGG19         | 97%           | 0.97     |
 | VGG + CNN     | 97%           | 0.97     |
 | CNN Model 1   | 95%           | 0.95     |
+| CNN Model 2   | 94.5%         | 0.95     |
 | ResNet50      | 87.5%         | 0.88     |
+| Xception      | 35%           | 0.35     |
 
-## 📁 Structure
-- `/models`: Source code for each model
-- `/results`: Visualizations of training progress and performance
-- `/notebook`: Jupyter notebook summary
-- `Report.pdf`: Full academic report
+> Note: Xception underperformed likely due to overfitting or domain mismatch.
 
-## 🚀 How to Run
-1. Clone this repo
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the model scripts or open the notebook
+---
+
+## 🛠️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/chest-xray-classification.git
+cd chest-xray-classification
