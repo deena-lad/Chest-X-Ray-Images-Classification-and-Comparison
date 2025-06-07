@@ -52,5 +52,5 @@ This project replicates and compares various deep learning models for classifyin
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/chest-xray-classification.git
+git clone https://github.com/deena-lad/chest-xray-classification.git
 cd chest-xray-classification
