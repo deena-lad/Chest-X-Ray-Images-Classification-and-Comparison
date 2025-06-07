@@ -2,8 +2,6 @@
 
 This project replicates and compares state-of-the-art deep learning techniques for classifying chest X-ray images into three categories: **COVID-19**, **Pneumonia**, and **Normal**. The study implements models such as **CNN**, **VGG16**, **VGG19**, **ResNet50**, **Xception**, and a **Hybrid VGG19+CNN**.
 
-📄 **[View Full Report (PDF)](Seminar_Report.pdf)**
-
 ## 🧠 Techniques Used
 - Convolutional Neural Networks (Custom)
 - Pretrained Architectures: VGG16, VGG19, ResNet50, Xception
